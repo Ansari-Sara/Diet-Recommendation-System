@@ -1,0 +1,653 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif
+}
+
+/* Header section starts*/
+header {
+  background-color: #022b15;
+  height: 80px; /* Increased header height */
+  display: flex;
+  align-items: center; /* Center-aligns items vertically */
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Center-aligns items vertically */
+  justify-content: space-between;
+  padding: 0 130px; /* Adjust padding to fit the new height */
+  color: white;
+  width: 100%; /* Ensure navbar spans full width */
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Space between items */
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px; /* Adjust padding for better appearance */
+  display: block;
+  border-radius: 5px; /* Add border-radius */
+  transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition */
+}
+
+.nav-menu a:hover {
+  background-color: #29d978;
+  border-radius: 20px; /* Increase border-radius on hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #022b15;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 20px; /* Add border-radius to dropdown content */
+  margin-bottom: 30px; /* Increase margin-bottom to add space below */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 25px; /* Add border-radius to dropdown items */
+  transition: background-color 0.3s, border-radius 0.3s; /* Smooth transition */
+}
+
+.dropdown-content a:hover {
+  background-color: #29d978;
+  border-radius: 10px; /* Increase border-radius on hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #29d978;
+}
+
+.dropbtn {
+  background-color: #022b15;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 25px; /* Add border-radius to dropdown button */
+}
+/* Header section ends*/
+/* Footer */
+footer {
+    background-color: #022b15;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 20px;
+}
+
+/* Home section starts*/
+.index {
+  padding: 20px;
+}
+.index .content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #000000;
+  position: absolute;
+}
+.index .content h1 {
+  font-size: 60px;
+  padding-left: 0px;
+  margin-top: 10%;
+  letter-spacing: 2px;
+}
+.index .content p {
+  font-size: 25px;
+  padding-left: 0px;
+  padding-bottom: 25px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+/* Home section ends*/
+
+/* About section ends*/
+.about {
+  padding: 20px;
+}
+.about .content1 {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #000000;
+  position: absolute;
+}
+.about .content1 h1 {
+  font-size: 60px;
+  padding-left: 0px;
+  margin-top: 5%;
+  letter-spacing: 2px;
+}
+.about .content1 p {
+  padding-left: 0px;
+  padding-bottom: 25px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+/* About section ends*/
+
+/* Contact section starts */
+.contact{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.contact .container {
+    width: 80%;
+    margin: 50px auto;
+}
+.contact .container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.contact .contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%; /* Full width of its parent */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact .contact-left, .contact-right {
+    width: 45%;
+}
+.contact .contact-left {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+.contact .contact-left h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+.contact .contact-left h3 {
+   padding-bottom: 10px;
+   padding-top: 20px;
+}
+.contact .contact-right h2 {
+    text-align: center;
+    margin-top: 0;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+.contact input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #043a1d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #29d978;
+}
+/* Contact section ends */
+
+/* Q&A section starts*/
+.queandans {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+.queandans .wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better visibility */
+  }
+.queandans h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+.queandans .faq {
+    margin-bottom: 15px; /* Increased space between FAQs */
+  }
+.queandans .accordion {
+    background-color: rgba(7, 87, 23, 0.8); /* Transparent blue background */
+    color: #fff;
+    cursor: pointer;
+    padding: 20px; /* Increased padding for greater height */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+    min-height: 80px; /* Set a minimum height */
+  }
+.queandans .accordion:hover {
+    background-color: rgb(73, 236, 73); /* Solid blue background on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow on hover */
+  }
+.queandans .accordion.active {
+    background-color: rgb(7, 87, 23); /* Solid blue background when active */
+  }
+.queandans .accordion i {
+    float: right;
+    transition: transform 0.3s ease;
+  }
+.queandans .accordion.active i {
+    transform: rotate(180deg);
+  }
+.queandans .pannel {
+    display: none;
+    padding: 20px; /* Increased padding */
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly transparent light grey background */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-top: none;
+    min-height: 80px; /* Set a minimum height for consistency */
+  }
+.queandans .pannel p {
+    margin: 0;
+  }
+/* Q&A section ends */
+
+
+/* Exercise section starts */
+.exercise {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+.exercise h1{
+  text-align: center;
+}
+.exercise section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.exercise h2 {
+  color: #022b15;
+  border-bottom: 2px solid #022b15;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+.exercise ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.exercise .benefits {
+  background-color: #e9f7ef;
+  padding: 10px;
+  border-left: 4px solid #28a745;
+  margin-top: 10px;
+}
+.exercise .image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.exercise .image-container img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px; 
+}
+/* Exercise section ends */
+
+/* Recipe section starts*/
+.recipe {
+  padding: 1.5em;
+}
+.recipe h1 {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin: 0;
+}
+.recipe section {
+  margin-bottom: 2em;
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.recipe h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #022b15;
+  margin-bottom: 0.5em;
+}
+.recipe h3 {
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+.recipe .card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+}
+.recipe .card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+.recipe .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+.recipe .card-content {
+  padding: 1em;
+}
+.recipe .card-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+  color: #333;
+}
+.recipe .card-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}
+/* Recipe section ends */
+
+/* Events section starts*/
+.events {
+  background: #eaeaea;
+  overflow: hidden;
+}
+.events .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1150px;
+  height: 550px;
+  background: #f5f5f5;
+  box-shadow: 0 30px 50px #dbdbdb;
+}
+/* Item styling for each slide */
+.events .container .slide .item {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  box-shadow: 0 30px 50px #505050;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: inline-block;
+  transition: 0.5s;
+}
+/* Styling for the first two items */
+.events .slide .item:nth-child(1),
+.events .slide .item:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Positioning for items after the first two */
+.events .slide .item:nth-child(3) {
+  left: 50%;
+}
+.events .slide .item:nth-child(4) {
+  left: calc(50% + 220px);
+}
+.events .slide .item:nth-child(5) {
+  left: calc(50% + 440px);
+}
+/* Hide the sixth and further items */
+.events .slide .item:nth-child(n + 6) {
+  left: calc(50% + 660px);
+  opacity: 0;
+}
+/* Content inside each item */
+.events .item .content {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 300px;
+  text-align: left;
+  color: #000000;
+  transform: translate(0, -50%);
+  font-family: system-ui;
+  display: none;
+}
+/* Show content for the second item */
+.events .slide .item:nth-child(2) .content {
+  display: block;
+}
+/* Name styling inside content */
+.events .content .name {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+.events .content .day {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 1 forwards;
+}
+/* Description styling inside content */
+.events .content .des {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+/* Keyframe for animations */
+@keyframes animate {
+  from{
+      opacity: 0;
+      transform: translate(0, 100px);
+      filter: blur(33px);
+  }
+  to{
+      opacity: 1;
+      transform: translate(0);
+      filter: blur(0);
+  }
+}
+/* Styling for navigation buttons */
+.events .button {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+/* Individual button styling */
+.events .button button {
+  width: 40px;
+  height: 35px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  border: 1px solid #000;
+  transition: 0.3s;
+}
+/* Hover effect for buttons */
+.events .button button:hover {
+  background: #ababab;
+  color: #fff
+}
+/* Events section ends */
+
+
+/* Code for Dynamic */
+/* QandA */
+@media (max-width: 600px) {
+  .queandans  .accordion {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    padding: 15px; /* Adjusted padding */
+    min-height: 50px; /* Reduced minimum height for smaller screens */
+  }
+  .queandans .pannel {
+    padding: 15px; /* Adjusted padding */
+    min-height: 60px; /* Reduced minimum height for smaller screens */
+  }
+}
+
+/* Service Section Styling */
+.services {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 20px 0; /* Add some padding */
+}
+
+.services h1 {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Card Container Styling */
+.services .container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.services h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Card Styling */
+.services .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px); /* Allow flexible growth */
+  height: 530px; /* Fixed height for cards */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.services .card i {
+  font-size: 50px;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.services .card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.services .card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* List Styling */
+.services .card ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  display: flex; /* Align items in a line */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  justify-content: center; /* Center the items */
+}
+
+.services .card ul li {
+  margin: 5px 10px; /* Space out items */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .services .card {
+      flex: 1 1 calc(50% - 20px); /* Two cards in a row */
+  }
+}
+
+@media (max-width: 600px) {
+  .services .card {
+      flex: 1 1 100%; /* One card per row */
+  }
+}
